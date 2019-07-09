@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Telefonliste - Seeland GmbH</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: "Calibri";
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+table {
+  border-spacing: 5px;
+}
+</style>
+</head>
+<body>
+<table style="width:100%">
+  <caption><b>Telefonliste - Gustav Seeland GmbH</b> (@@datetime@@)</caption>
+  <tr>
+    <th>Benutzername</th>
+    <th>Name</th> 
+    <th>Email</th>
+    <th>Telefon</th>
+    <th>Mobil</th>
+    <th>Abteilung</th>
+  </tr>
+  @@rows@@
+</table>
+</body>
+</html>
