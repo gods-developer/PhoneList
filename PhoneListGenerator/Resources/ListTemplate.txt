@@ -23,8 +23,9 @@ table {
 </head>
 <body>
 <table style="width:100%">
-  <caption><b>Telefonliste - Gustav Seeland GmbH</b> (@@datetime@@)</caption>
+  <caption><b>Telefonliste - Gustav Seeland GmbH</b> (@@datetime@@)<p></caption>
   <tr>
+    <th style="text-align: right;">#</th>
     <th>Benutzername</th>
     <th>Name</th> 
     <th>Email</th>

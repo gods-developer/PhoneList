@@ -25,7 +25,9 @@ namespace PhoneListGenerator
             {
                 if (!String.IsNullOrEmpty(user.Email) || !String.IsNullOrEmpty(user.Phone) || !String.IsNullOrEmpty(user.Mobile))
                 {
+                    c++;
                     sb.AppendLine("<tr>");
+                    sb.AppendLine("<td align=\"right\">" + c + "</td>");
                     sb.AppendLine("<td>" + user.SamAccountName + "</td>");
                     sb.AppendLine("<td>" + user.DisplayName + "</td>");
                     sb.AppendLine("<td><a href=\"mailto:" + user.Email + "\">" + user.Email + "</a></td>");
@@ -33,7 +35,6 @@ namespace PhoneListGenerator
                     sb.AppendLine("<td>" + user.Mobile + "</td>");
                     sb.AppendLine("<td>" + user.Department + "</td>");
                     sb.AppendLine("</tr>");
-                    c++;
                 }
             }
             html = html.Replace("@@datetime@@", "Stand " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString());
